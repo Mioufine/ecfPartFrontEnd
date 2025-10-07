@@ -1,0 +1,134 @@
+<?php include __DIR__ . '/header.phtml'; ?>
+    <main class="utilisateurMain">
+        <div class="userInformation">
+            <legend class="fieldIdLegend">Utilisateur</legend>
+            <div class="infoIdentification">
+                <figure class="infoIdFigure"></figure>
+            </div>
+            <ul class="infoIdentification">
+                <li id="credit">Crédits :</li>
+                <li id="creditValue">20</li>
+            </ul>
+            <ul class="infoIdentification">
+                <li id="name">Nom :</li>
+                <li id="nameValue">Name</li>
+            </ul>
+            <ul class="infoIdentification">
+                <li id="firstname">Prénom :</li>
+                <li id="firstnameValue">Prénom</li>
+            </ul>
+            <ul class="infoIdentification">
+                <li id="pseudo">Pseudo :</li>
+                <li id="pseudoValue">Pseudo</li>
+                </ul>
+            <ul class="infoIdentification">
+                <li id="bornDate">Date de naissance :</li>
+                <li id="bornDateValue">00/00/00</li>
+            </ul>
+            <ul class="infoIdentification">
+                <li id="email">E-mail :</li>
+                <li id="emailValue">email@email.fr</li>
+            </ul>
+            <ul class="infoIdentification">
+                <li id="phone">Tel n° :</li>
+                <li id="phoneValue">00 00 00 00 00</li>
+            </ul>
+            <ul class="infoIdentification">
+                <li id="password">Mot de passe :</li>
+                <li id="passwordValue">password</li>
+            </ul>
+        </div>
+
+        <form class="formIdentification">
+            <fieldset class="fieldIdCar" id="stockCars">
+                <legend class="fieldIdLegend">Véhicule</legend>
+                <button type="button" class="btnCreatFormCar" data-action="addCar">Ajouter un véhicule</button>
+                <div class="savingCar">
+                    <button type="button" class="btnRemove">Enlever</button>
+                    <ul class="infoVoitureSaving">
+                        <li id="model">Model voiture : </li>
+                        <li id="modelValue">Citroën</li>
+                    </ul>
+                    <ul class="infoVoitureSaving">
+                        <li id="imatriculation">Imatriculation : </li>
+                        <li id="imatriculationValue">56DF2L</li>
+                    </ul>
+                    <ul class="infoVoitureSaving">
+                        <li id="dateImatriculation">Date d'imatriculation : </li>
+                        <li id="dateImatriculationValue">00/00/0000</li>
+                    </ul>
+                    <ul class="infoVoitureSaving">
+                        <li id="dateImatriculation">Date d'imatriculation : </li>
+                        <li id="dateImatriculationValue">00/00/0000</li>
+                    </ul>
+                    <ul class="infoVoitureSaving">
+                        <li id="energy">Énergie : </li>
+                        <li id="energyValue">Essence</li>
+                    </ul>
+                    <ul class="infoVoitureSaving">
+                        <li id="places">Nombre de place : </li>
+                        <li id="placesValue">2</li>
+                    </ul>
+                    <ul class="infoVoitureSaving">
+                        <li id="color">Couleur : </li>
+                        <li id="colorValue">Vert</li>
+                    </ul>
+                    <ul class="infoVoitureSaving">
+                        <li id="animals">Sans animaux</li>
+                    </ul>
+                    <ul class="infoVoitureSaving">
+                        <li id="smoker">Non-fumeur</li>
+                    </ul>
+                    <a class="btnTravels" href="voyage.phtml">Mes Voyages</a>
+
+                </div>
+                <form class="formCreatCar" action="" methode="POST">
+                    <fieldset class="creatCar is-hidden">
+                        <button type="button" class="btnCancel">Annuler</button>
+                        <div class="infoVoiture">
+                            <label for="model">Model du véhicule</label>
+                            <input type="text" name="model" id="name">
+                        </div>
+                        <div class="infoVoiture">
+                            <label for="imatriculation">Imatriculation</label>
+                            <input type="text" name="imatriculation" id="imatriculation">
+                        </div>
+                        <div class="infoVoiture">
+                            <label for="dateImatriculation">Date d'imatruculation</label>
+                            <input type="date" name="dateImatriculation" id="dateImatriculation">
+                        </div>
+                        <div class="infoVoiture">
+                            <label for="energy">Énergie</label>
+                            <select name="energy" id="energy">
+                                <option value="essence">Essence</option>
+                                <option value="diesel">Diesel</option>
+                                <option value="electrique">Électrique</option>
+                                <option value="hybride">Hybride</option>
+                            </select>
+                        </div>
+                        <div class="infoVoiture">
+                            <label for="place">Place</label>
+                            <input type="number" name="place" id="place" min="1" max="4">
+                        </div>
+                        <div class="infoVoiture">
+                            <label for="color">Couleur</label>
+                            <input type="text" name="color" id="color">
+                        </div>
+                        <div class="infoVoiture">
+                            <input type="radio" name="animals" id="animals">
+                            <label for="animals">Sans-animaux</label>
+                        </div>
+                        <div class="infoVoiture">
+                            <input type="radio" name="smoker" id="smoker">
+                            <label for="smoker">Non-fumeur</label>
+                        </div>
+
+                        <button class="btnSaveCar" type="submit">Enregistrer</button>
+                    </fieldset>
+                    
+                </form>
+                
+            </fieldset>
+        </form>
+    </main>
+    <?php include __DIR__ . '/footer.phtml'; ?>

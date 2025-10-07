@@ -1,0 +1,548 @@
+/* ##################################################################### */
+/* ############################### FONTS ############################### */
+/* ##################################################################### */
+
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?g80gi9');
+  src:  url('fonts/icomoon.eot?g80gi9#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?g80gi9') format('truetype'),
+    url('fonts/icomoon.woff?g80gi9') format('woff'),
+    url('fonts/icomoon.svg?g80gi9#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+
+/* ##################################################################### */
+/* ############################# VARIABLES ############################# */
+/* ##################################################################### */
+
+:root{
+    --color-background-01: #82cd9b;
+    --color-background-02: #64ab72;
+    --color-link-01: #176035;
+    --color-link-02: #bfe5cf;
+    --color-text-01: #0e381f;
+    --color-text-02: #1b6c3b;
+    --color-light: #fff;
+    --color-dark: #000000;
+}
+
+/* ##################################################################### */
+/* ################################ BASE ############################### */
+/* ##################################################################### */
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-link-01);
+}
+
+h1,h2 {
+    text-align: center;
+}
+
+
+li {
+  list-style-type: none;
+}
+
+li:nth-child(1) {
+  font-weight: bolder;
+}
+
+/* ##################################################################### */
+/* ############################### HEADER ############################## */
+/* ##################################################################### */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 2em 2em;
+    background: linear-gradient(var(--color-light),var(--color-background-02));
+}
+
+.navLinks {
+    display: flex;
+    align-items: center;
+}
+
+.navLink {
+    margin: 0 0.5em;
+    padding: 0.7em;
+    border-radius: 2em;
+    border: 2px solid var(--color-link-01);
+    background-color: var(--color-link-02);
+    @media (min-width: 630px){
+    
+  }
+}
+
+.logoSvg{
+    fill: var(--color-link-01);
+}
+
+.titleLogo{
+  position: absolute;
+  margin: 0;
+  padding: 0 0.5em;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+/* ##################################################################### */
+/* ############################### FOOTER ############################## */
+/* ##################################################################### */
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 2em 2em;
+    background: linear-gradient(var(--color-background-02),var(--color-light));
+}
+
+footer p{
+    color: var(--color-text-01);
+}
+
+/* ##################################################################### */
+/* ################################ MAIN ############################### */
+/* ##################################################################### */
+main {
+  min-height: 100vh;
+  background: linear-gradient(var(--color-background-02)0%,var(--color-light)10%,var(--color-light)90%,var(--color-background-02)100%); 
+} 
+
+
+/* ====================================================== */
+/* ======================= ACCUEIL ====================== */
+/* ====================================================== */
+
+/* ~~~~~~~~~~~~~~ RECHERCHE ~~~~~~~~~~~~~~ */
+.homeSearch {
+  padding-top: 7em;
+  height: 100vh;
+  background-image: url(../img/road-green.jpg);
+  filter: grayscale(50%);
+  background-repeat: no-repeat;
+  background-size:1600px 100vh;
+
+}
+
+.formSearchDestination {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10em 10%;
+}
+
+.fieldSearchDestination {
+  align-self: stretch;
+  display: flex; 
+  border: none;
+}
+
+.textSearch {
+  flex-grow: 3;
+  padding: 1em;
+  border-radius: 3em;
+}
+
+.btnSbumit {
+  margin: 0 1em;
+  padding: 1em;
+  border-radius: 3em;
+
+  border: 2px solid var(--color-link-01);
+  background-color: var(--color-link-02);
+  color: var(--color-link-01);
+
+  font-size: 1em;
+}
+
+.btnSearch {
+  text-align: center;
+}
+
+/* ~~~~~~~~~~~~~ PRÉSENTATION ~~~~~~~~~~~~ */
+.homeDescription {
+    padding: 4em;
+}
+
+/* ====================================================== */
+/* =========== FORM - CONNEXION & INSCRIPTION =========== */
+/* ====================================================== */
+.connexionMain{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  padding-top: 7em;
+}
+.inscriptionMain{
+  display: flex;
+  justify-content: center;
+  padding: 7em 0;
+}
+.fieldIdentification {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2em;
+
+  padding: 2em;
+  border-radius: 2em;
+}
+
+.fieldIdLegend{
+  padding: 0 1em;
+  font-size: 1.5em;
+  font-weight: bold;
+  color: var(--color-text-02);
+}
+
+.inputIdentification {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.inputIdentification input{
+  padding: 1em;
+  border-radius: 2em;
+}
+
+/* ====================================================== */
+/* ===================== UTILISATEUR ==================== */
+/* ====================================================== */
+.utilisateurMain{
+  padding: 7em 10%;
+}
+
+/* ~~~~~~~~~~ INFOS UTILISATEUR ~~~~~~~~~~ */
+
+.userInformation{
+  padding: 2em;
+  border: 2px solid var(--color-dark);
+  border-radius: 3em;
+}
+
+.fieldIdCar{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  
+  gap: 2em;
+  margin-top: 2em;
+  padding: 2em;
+  border-radius: 2em;
+}
+.infoIdentification{
+  display: flex;
+  align-items: center;
+  gap: 2em;
+}
+
+.infoIdFigure{
+  min-width: 150px;
+  min-height: 150px;
+  margin: 0;
+  border: 2px solid var(--color-text-01);
+  border-radius: 50%;
+}
+
+/* ~~ VOITURE : ENREGISTRÉ OU À AJOUTER ~~ */
+
+.btnCreatFormCar{
+  grid-column-start: 1;
+  grid-column-end: span col2-start; 
+  align-self: start; 
+  justify-self: start;
+  padding: 0.7em;
+  border-radius: 1em;
+  background-color: var(--color-link-01);
+  color: var(--color-light);
+}
+
+.creatCar{
+  display: block;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1em;
+  padding: 2em;
+  border-radius: 2em;
+}
+.creatCar input, 
+.creatCar select{
+  align-self:stretch;
+  padding: 0.5em;
+  border-radius: 2em;
+  
+}
+
+.is-hidden{
+  visibility: hidden;
+}
+
+.btnSaveCar{
+  margin: 0 5em;
+  padding: 0.5em;
+  border-radius: 3em;
+
+  border: 2px solid var(--color-link-01);
+  background-color: var(--color-link-02);
+  color: var(--color-link-01);
+
+  font-size: 1em;
+}
+.btnCancel, .btnRemove{
+  margin: 0 auto 0 80%;
+  padding: 0.5em;
+  border-radius: 3em;
+}
+
+.infoVoitureSaving {
+  display: flex;
+  justify-content: space-between;
+  
+  margin: 1em 2em;
+}
+
+.btnTravels{
+  padding: 0.5em;
+  border-radius: 3em;
+
+  border: 2px solid var(--color-link-01);
+  background-color: var(--color-link-02);
+  color: var(--color-link-01);
+
+  font-size: 1em;
+}
+
+/* ====================================================== */
+/* ================= VOYAGES CONDUCTEUR ================= */
+/* ====================================================== */
+
+.travelMain{
+  padding: 7em 10%;
+}
+
+/* ~~~~~~~~~~~~ NOUVEAU VOYAGE ~~~~~~~~~~~ */
+
+.btnNewTravel{
+  padding: 0.7em;
+  border-radius: 1em;
+  background-color: var(--color-link-01);
+  color: var(--color-light);
+}
+
+.fieldNewTravel{
+  display: grid;
+  width: 20%;
+  gap: 2em;
+  margin-top: 2em;
+  padding: 2em;
+  border-radius: 2em;
+
+}
+
+.legendNewTravel{
+  padding: 0 1em;
+  font-size: 1.5em;
+  font-weight: bold;
+  color: var(--color-text-02);
+}
+
+.btnCancelTravel{
+  margin: 0 auto 0 80%;
+  padding: 0.5em;
+  border-radius: 3em;
+}
+
+.infoNewTravel{
+  display: flex;
+  align-items:center;
+  gap: 2em;
+}
+
+.infoNewTravel input{
+  align-self:stretch;
+  padding: 0.5em;
+  border-radius: 2em;
+}
+
+.btnSaveTravel{
+  margin: 0 5em;
+  padding: 0.5em;
+  border-radius: 3em;
+
+  border: 2px solid var(--color-link-01);
+  background-color: var(--color-link-02);
+  color: var(--color-link-01);
+
+  font-size: 1em;
+}
+
+/* ~~~~~~~~~~~ VOYAGE EN COURS ~~~~~~~~~~~ */
+
+.btnDepart{
+  padding: 0.5em;
+  border-radius: 1em;
+
+  border: 2px solid var(--color-link-01);
+  background-color: var(--color-link-02);
+  color: var(--color-link-01);
+
+  font-size: 1em;
+}
+
+.btnArrival{
+  padding: 0.7em;
+  border-radius: 1em;
+  background-color: var(--color-link-01);
+  color: var(--color-light);
+  font-size: 1em;
+}
+
+/* ~~~~~~~~~~~ ANCIENS VOYAGES ~~~~~~~~~~~ */
+
+.oldTravel, .progressTravel{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.artTravel, .artProgressTravel{
+  grid-row-start: 2;
+  padding: 2em 2em 2em 1em;
+  border: 2px solid var(--color-link-01);
+  border-radius: 3em;
+}
+
+.infoTravel{
+  display: flex;
+  gap:1em;
+  
+
+}
+
+/* ====================================================== */
+/* ===================== COVOITURAGE ==================== */
+/* ====================================================== */
+.fieldFiltersDestination {
+  display: flex;
+  align-items: center;
+  gap: 2em;
+  margin-top: 1em;
+  padding: 1.5em 3em;
+  border-radius: 3em;
+}
+
+.filtersDestination{
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+
+.filtersDestination input{
+  padding: 0.5em;
+  border-radius: 2em;
+}
+
+/* ##################################################################### */
+/* ############################### ICONS ############################### */
+/* ##################################################################### */
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  font-size: 2em;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-location:before {
+  content: "\e947";
+}
+.icon-location2:before {
+  content: "\e948";
+}
+.icon-compass:before {
+  content: "\e949";
+}
+.icon-users:before {
+  content: "\e972";
+}
+.icon-search:before {
+  content: "\e986";
+}
+.icon-equalizer:before {
+  content: "\e992";
+}
+.icon-leaf:before {
+  content: "\e9a4";
+}
+.icon-switch:before {
+  content: "\e9b6";
+}
+.icon-attachment:before {
+  content: "\e9cd";
+}
+.icon-star-empty:before {
+  content: "\e9d7";
+}
+.icon-star-half:before {
+  content: "\e9d8";
+}
+.icon-star-full:before {
+  content: "\e9d9";
+}
+.icon-plus:before {
+  content: "\ea0a";
+}
+.icon-cross:before {
+  content: "\ea0f";
+}
+.icon-mail2:before {
+  content: "\ea84";
+}
+.icon-pencil:before {
+  content: "\e905";
+}
+.icon-ticket:before {
+  content: "\e939";
+}
+.icon-bubble:before {
+  content: "\e96b";
+}
+.icon-spinner10:before {
+  content: "\e983";
+}
+.icon-credit-card:before {
+  content: "\e93f";
+}
+.icon-bin2:before {
+  content: "\e9ad";
+}

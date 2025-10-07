@@ -1,0 +1,48 @@
+<?php include __DIR__ . '/header.phtml'; ?>
+    <main class="inscriptionMain">
+
+        <form class="formIdentification" methode="get">
+            <fieldset class="fieldIdentification">
+                <legend class="fieldIdLegend">Inscription</legend>
+                <div class="inputIdentification">
+                    <label for="avatar">Choisir sa photo de profile</label>
+                    <input type="file" id="avatar" name="avatar">
+                </div>
+                <div class="inputIdentification">
+                    <label for="name">Nom</label>
+                    <input type="text" id="name" name="name">
+                </div>
+                <div class="inputIdentification">
+                    <label for="firstname">Prénom</label>
+                    <input type="text" id="firstname" name="firstname">
+                </div>
+                <div class="inputIdentification">
+                    <label for="pseudo">Pseudo</label>
+                    <input type="text" id="pseudo" name="pseudo">
+                </div>
+                <div class="inputIdentification">
+                    <label for="bornDate">Date de naissance</label>
+                    <input type="date" id="bornDate" name="bornDate">
+                </div>
+                <div class="inputIdentification">
+                    <label for="email">E-mail</label>
+                    <input type="text" id="email" name="email">
+                </div>
+                <div class="inputIdentification">
+                    <label for="phone">Tel n°</label>
+                    <input type="number" id="phone" name="phone" maxlength="10">
+                </div>
+                <div class="inputIdentification">
+                    <label for="password">Mot de passe</label>
+                    <input type="password" id="password" name="password">
+                </div>
+                <div class="inputIdentification">
+                    <label for="password">Confimer le mot de passe</label>
+                    <input type="password" id="password" name="password">
+                </div>
+                <button class="btnSbumit" type="submit">Inscription</button>
+                <p>J'ai déjà un compte ! <a href="connexion.phtml">Connectez-vous</a>!</p>
+            </fieldset>
+        </form>
+    </main>
+    <?php include __DIR__ . '/footer.phtml'; ?>

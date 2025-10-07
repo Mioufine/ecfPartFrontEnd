@@ -1,0 +1,20 @@
+<?php include __DIR__ . '/header.phtml'; ?>
+    <main class="connexionMain">
+
+        <form class="formIdentification" methode="get">
+            <fieldset class="fieldIdentification">
+                <legend class="fieldIdLegend">Connexion</legend>
+                <div class="inputIdentification">
+                    <label for="email">E-mail</label>
+                    <input type="text" id="email" name="email">
+                </div>
+                <div class="inputIdentification">
+                    <label for="password">Mot de Passe</label>
+                    <input type="text" id="password" name="password">
+                </div>
+                <button class="btnSbumit" type="submit">Connexion</button>
+                <p>Vous n'avez pas de compte? <a href="inscription.phtml">Inscrivez-vous</a>!</p>
+            </fieldset>
+        </form>
+    </main>
+    <?php include __DIR__ . '/footer.phtml'; ?>
