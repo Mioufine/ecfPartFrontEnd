@@ -2,4 +2,4 @@
 
 $title = "Voyages";
 
-include __DIR__ .'/view/voyage.phtml';
+include __DIR__ .'/view/voyages.phtml';

@@ -1,0 +1,74 @@
+<?php include __DIR__ . '/header.phtml'; ?>
+    <main class="travelMain">
+      <button class="btnNewTravel" type="button">Ajouter un voyage</button>  
+      <div class="newTravel"></div>
+      <div class="progressTravel">
+        <h2>Voyage en cours</h2>
+        <article class="artProgressTravel">
+            <ul class="infoTravel">
+                <li id="date">Date : </li>
+                <li id="dateValue">00/00/0000</li>
+            </ul>
+            <ul class="infoTravel">
+                <li id="departure">Départ : </li>
+                <li id="departureValue"> Paris</li>
+                <li id="departureValue departureHours">00h00</li>
+            </ul>
+            <ul class="infoTravel">
+                <li id="arrival">Arrivée : </li>
+                <li id="arrivalValue"> Marseille</li>
+                <li id="arrivalValue arrivalHours">00h00</li>
+            </ul>
+            <ul class="infoTravel">
+                <li id="price">Prix : </li>
+                <li id="priceValue"> 20€</li>
+            </ul>
+            <ul class="infoTravel">
+                <li id="vehicle">Véhicule : </li>
+                <li id="vehicleValue">Citroën</li>
+            </ul>
+            <ul class="infoTravel">
+                <li id="driver">Chauffeur : </li>
+                <li id="driverValue">Pseudo</li>
+            </ul>
+            <button class="btnDepart" type="button">Démarrer</button>
+            <span class="inProgress" hidden>En cours ...</span>
+            <button class="btnArrival" type="button" hidden>Arriver</button>
+        </article>
+      </div>
+      <div class="oldTravel">
+        <h2>Mes Voyages Passés</h2>
+        <article class="artTravel">
+             <ul class="infoTravel">
+                <li id="date">Date : </li>
+                <li id="dateValue">00/00/0000</li>
+            </ul>
+            <ul class="infoTravel">
+                <li id="departure">Départ : </li>
+                <li id="departureValue"> Paris</li>
+                <li id="departureValue departureHours">00h00</li>
+            </ul>
+            <ul class="infoTravel">
+                <li id="arrival">Arrivée : </li>
+                <li id="arrivalValue"> Marseille</li>
+                <li id="arrivalValue arrivalHours">00h00</li>
+            </ul>
+            <ul class="infoTravel">
+                <li id="price">Prix : </li>
+                <li id="priceValue"> 20€</li>
+            </ul>
+            <ul class="infoTravel">
+                <li id="vehicle">Véhicule : </li>
+                <li id="vehicleValue">Citroën</li>
+            </ul>
+            <ul class="infoTravel">
+                <li id="driver">Chauffeur : </li>
+                <li id="driverValue">Pseudo</li>
+            </ul>
+        </article>
+      </div>
+      
+      
+
+    </main>
+    <?php include __DIR__ . '/footer.phtml'; ?>
