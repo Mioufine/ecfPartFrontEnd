@@ -21,7 +21,7 @@ On retrouve les page php à la base du dossier:
   - Les fichiers Javascript.
     
 **Dans "view":**
--  Les fichiers phtml, awith project structure avec le code html :
+-  Les fichiers phtml, structure avec le code html :
 * l'acceuil
 * covoiturage : *recherche d'un covoiturage*
 * connexion : *formulaire de connexion*
