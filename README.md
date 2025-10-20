@@ -9,16 +9,16 @@ On retrouve les page php à la base du dossier:
 - voyages
   
 **Dans "ressources":** 
- Tu trouveras un fichiers PDF où il y aura le cheminement de création du projet et les outils techniques utilisés, ainsi que les dossiers contenant
+ * Tu trouveras un fichiers PDF où il y aura le cheminement de création du projet et les outils techniques utilisés, ainsi que les dossiers contenant
   - Les maquettes
   - le mockup
   - la charte graphique
 **Dans "style":**
-La stylesheet
+- La stylesheet
 **Dans "js":**
-Les fichiers Javascript.
+- Les fichiers Javascript.
 **Dans "view":**
-Les fichiers phtml, avec le code html :
+* Les fichiers phtml, awith project structure avec le code html :
 - l'acceuil
 - covoiturage : *recherche d'un covoiturage*
 - connexion : *formulaire de connexion*
