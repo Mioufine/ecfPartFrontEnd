@@ -38,4 +38,4 @@ On retrouve les page php à la base du dossier:
     
 Bon courage pour les corrections!
 
-Laura 
+Laura Dormoy
