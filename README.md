@@ -30,7 +30,7 @@ On retrouve les page php à la base du dossier **app**:
   - background
   - logo
 
-**Dans "doc":** 
+**Dans "doc":** A la racine 
  - Tu trouveras un fichiers PDF où il y aura le cheminement de création du projet et les outils techniques utilisés, ainsi que les dossiers contenant
   * Les maquettes
   * le mockup
