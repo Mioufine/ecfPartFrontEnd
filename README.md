@@ -1,7 +1,7 @@
 ## ecfPartFrontEnd
 Repositoring ECF Front-End Studi octobre 2025
 On retrouve les page php à la base du dossier **app**:
-- l'acceuil
+- l'accueil
 - covoiturage 
 - connexion 
 - inscription 
