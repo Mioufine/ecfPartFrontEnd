@@ -1,18 +1,12 @@
 ## ecfPartFrontEnd
 Repositoring ECF Front-End Studi octobre 2025
-On retrouve les page php à la base du dossier:
+On retrouve les page php à la base du dossier **app**:
 - l'acceuil
 - covoiturage 
 - connexion 
 - inscription 
 - utilisateur 
 - voyages
-  
-**Dans "ressources":** 
- - Tu trouveras un fichiers PDF où il y aura le cheminement de création du projet et les outils techniques utilisés, ainsi que les dossiers contenant
-  * Les maquettes
-  * le mockup
-  * la charte graphique
     
 **Dans "style":**
   - La stylesheet
@@ -35,6 +29,12 @@ On retrouve les page php à la base du dossier:
   Les image svg, jpeg qui apparaissent sur le site
   - background
   - logo
+
+**Dans "doc":** 
+ - Tu trouveras un fichiers PDF où il y aura le cheminement de création du projet et les outils techniques utilisés, ainsi que les dossiers contenant
+  * Les maquettes
+  * le mockup
+  * la charte graphique
     
 Bon courage pour les corrections!
 
